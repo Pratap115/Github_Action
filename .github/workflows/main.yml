@@ -1,0 +1,14 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  call-docker-build:
+    uses: ./.github/workflows/build-and-push.yml   # 👈 local reusable workflow
+    with:
+      image-name: ubuntu-nginx
+    secrets:
+      DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+      DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
