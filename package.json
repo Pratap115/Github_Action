@@ -1,0 +1,12 @@
+{
+  "name": "github_action_demo",
+  "version": "1.0.0",
+  "description": "Demo project for GitHub Actions CI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Running tests...\" && exit 0"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {}
+}
